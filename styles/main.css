@@ -161,6 +161,11 @@ header {
     font-family: 'Montserrat', Arial, sans-serif;
     text-align: left;
 }
+.hero-title-box:hover h1,
+.hero-title-box.active h1 {
+    color: #d4e6d3; /* Hover ve aktif durumdaki açık yazı rengi */
+}
+
 
 .hero-text p {
     font-size: 1.15rem;
