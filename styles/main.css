@@ -394,6 +394,7 @@ footer {
     }
 }
 
+/* *** Burada profil resmi için kesin büyütme ayarı: *** */
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
@@ -415,16 +416,18 @@ footer {
         padding: 16px 2vw 0 2vw;
         border-radius: 10px;
     }
+    /* Burada kesin büyütme için !important kullandım: */
     .profile-img-wrapper {
-        width: 180px !important;
-        height: 240px !important;
-        max-width: 80vw;
+        width: 260px !important;
+        height: 360px !important;
+        max-width: 90vw !important;
     }
     .profile-img {
         width: 100% !important;
         height: 100% !important;
         object-fit: cover;
         border-radius: 18px;
+        transition: transform 0.3s cubic-bezier(.4,2,.3,1), box-shadow 0.3s;
     }
     .about-section {
         padding: 14px 8px;
