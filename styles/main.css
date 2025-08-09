@@ -148,9 +148,9 @@ header {
 
 .hero-title-box:hover,
 .hero-title-box.active {
-    transform: scale(1.06);
-    box-shadow: 0 8px 32px rgba(44,62,80,0.18);
     background: linear-gradient(90deg, #222a2e 0%, #128C7E 100%);
+    box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+    transform: scale(1.06);
 }
 
 .hero-title-box h1 {
