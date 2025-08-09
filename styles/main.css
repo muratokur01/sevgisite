@@ -150,7 +150,7 @@ header {
 .hero-title-box.active {
     transform: scale(1.06);
     box-shadow: 0 8px 32px rgba(44,62,80,0.18);
-    background: rgba(44, 50, 46, 0.22);
+    background: linear-gradient(90deg, #222a2e 0%, #128C7E 100%);
 }
 
 .hero-title-box h1 {
@@ -325,6 +325,15 @@ footer {
     .hero-title-box {
         text-align: center;
     }
+    .info-section {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+    .info-box {
+        max-width: 98vw;
+        min-width: 0;
+    }
 }
 
 @media (max-width: 600px) {
@@ -349,9 +358,9 @@ footer {
         border-radius: 10px;
     }
     .profile-img-wrapper {
-        width: 120px;
-        height: 160px;
-        max-width: 90vw;
+        width: 180px;
+        height: 240px;
+        max-width: 80vw;
     }
     .about-section {
         padding: 14px 8px;
@@ -368,7 +377,7 @@ footer {
         padding: 10px 18px;
         font-size: 1rem;
     }
-    /* ...mevcut kodlar... */
+}
 
 /* Yeni eklenen kutular için stiller */
 .info-section {
@@ -425,26 +434,4 @@ footer {
     font-size: 1rem;
     margin: 0;
     line-height: 1.6;
-}
-
-/* Hero başlık hover rengi güncellendi */
-.hero-title-box:hover,
-.hero-title-box.active {
-    transform: scale(1.06);
-    box-shadow: 0 8px 32px rgba(44,62,80,0.18);
-    background: linear-gradient(90deg, #222a2e 0%, #128C7E 100%);
-}
-
-/* Mobil uyumluluk */
-@media (max-width: 900px) {
-    .info-section {
-        flex-direction: column;
-        gap: 18px;
-        align-items: center;
-    }
-    .info-box {
-        max-width: 98vw;
-        min-width: 0;
-    }
-}
 }
